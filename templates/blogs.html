@@ -1,0 +1,60 @@
+{% extends 'insorance_base.html' %}
+{% block insorance_service_body %}
+<section id="hero-inner">
+    <div class="hero-inner-wrapper">
+        <div class="hero-inner-container bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>{{blog_obj.blog_title}}</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="col-md-8 my-5">
+    <article class="blog-post">
+            <img src="/{{blog_obj.blog_image}}" class="img-fluid w-75" alt="{{blog_obj.blog_alt_name}}"><br>
+        <div class="w-75">
+
+            <p class="container-fluid justify-content-center w-75">{{blog_obj.blog_content|safe}}</p><br>
+        </div>
+
+    </article>
+</div>
+{% comment %} <div class="container">
+    <div class="section-title">
+        <h1>Css Image Hover Effect</h1>
+    </div>
+
+    <div class="row">
+        {% for a in blogfl %}
+        <div class="column">
+
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/{{a.blog_image}}" alt="{{a.blog_alt_name}}">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>{{a.blog_alt_name}}</h2>
+                        <p>{{a.blog_title| truncatechars:50}}</p>
+                        <div class="effect-btn">
+                            <a href="/blogs/{{a.slug}}" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div> {% endcomment %}
+
+
+{% endblock insorance_service_body %}

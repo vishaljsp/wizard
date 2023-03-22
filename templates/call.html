@@ -1,0 +1,64 @@
+{% extends 'servicehederbase.html' %}
+{% block developer_service_body %}
+<section id="hero-inner">
+    <div class="hero-inner-wrapper">
+        <div class="hero-inner-container bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>
+                            <h2>
+                                Discovery Call</h2>
+                            <p>Get in touch with the global Award Winning IT Outsourcing Service Provider company</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ======= Contact Wrapper Section ======= -->
+<div id="callfm">
+    <div class="col-md-6 shadow-lg bg-white p-5 my-5">
+        <form id="rend" class="row g-3 " method="post">
+            {% csrf_token %}
+            <div class="col-md-12">
+                <!-- <label for="validationDefault01" class="form-label">First name</label> -->
+                <input type="text" class="form-control p-4" name="caller_user_name" id="name_call" required
+                    placeholder="Enter your Name">
+                <br>
+            </div>
+            <div class="col-md-12">
+                <input type="Email" class="form-control p-4" name="call_Email_id" id="email_call" required
+                    placeholder="Email ID">
+                <br>
+
+            </div>
+
+
+            <div class="col-md-12">
+                <input type="text" class="form-control p-4" name="call_phonen" id="num_call" required
+                    placeholder="Mobile">
+                <br>
+            </div>
+            <div class="col-md-12">
+                <input type="date" class="form-control p-4" name="call_date" id="date" required
+                    placeholder="Date">
+                <br>
+            </div>
+            <div class="col-md-12">
+                <input type="time" class="form-control p-4" name="call_time" id="time_call" required
+                    placeholder="Time">
+                <br>
+            </div>
+            <div class="col-10">
+                <button class="btn" type="button" onclick="call()" style="background-color:#dd3737;">Submit form</button>
+            </div>
+            <br><br>
+        </form>
+    </div>
+</div>
+<!-- End Contact Wrapper -->
+{% endblock developer_service_body %}

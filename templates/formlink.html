@@ -1,0 +1,76 @@
+<section class="connectus" id="connectus">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 info">
+                <div class="section-title">
+                    <h2>Let's <strong>Solve</strong> Your <strong>Business Problems</strong></h2>
+                </div>
+                <ul>
+
+                    <li>We would love to know what you need for the next level of growth for your business</li>
+
+
+                    <li>Telling us more about your business challenges will allow us to provide a better response
+                    </li>
+
+
+                    <li>Our expert team will get back to you within 24 hour for free consultation</li>
+
+
+                    <li>All information provided is kept confidential and under NDA</li>
+
+                </ul>
+            </div>
+            <div class="col-md-5 form shadow-lg bg-white p-5" style="height:100%;border-radius: 10px;">
+
+                <form id="rend" class="row g-3" method="post">
+                    {% csrf_token %}
+                    <p id="enputerror"></p>
+                    <div class="col-md-12">
+                        <!-- <label for="jssender" class="form-label">First name</label> -->
+                        <input type="text" class="form-control p-4" name="fullnamej" id="jssender_name" required
+                            placeholder="Full Name">
+                        <br>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="Email" class="form-control p-4" name="Email_id" id="jssender_eid" required
+                            placeholder="Email ID">
+                        <br>
+
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control p-4" name="phonen" id="jssender_nm" required
+                            placeholder="Mobile">
+                        <br>
+
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control p-5" name="textform" id="jssender_cument" required
+                            placeholder="Cummnets">
+                        <br>
+
+                    </div>
+
+
+
+
+                    <div class="col-10">
+                        <button class="btn" onclick="sm()" type="button" style="background-color:#dd3737;">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <script>
+    $("#smbtn").click(() => {
+        alert("helo")
+        swal({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "Aww yiss!",
+        });
+    })
+
+</script> -->

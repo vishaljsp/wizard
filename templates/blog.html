@@ -1,0 +1,172 @@
+{% extends 'insorance_base.html' %}
+{% block insorance_service_body %}
+<section id="hero-inner">
+    <div class="hero-inner-wrapper">
+        <div class="hero-inner-container bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>
+                            Blogs                      </h2>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container">
+    <h2 class="text-center">Letest blogs</h2>
+    <br>
+
+
+    <div class="row">
+        {% for a in blog %}
+        <div class="column">
+            
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/{{a.blog_image}}" alt="{{a.blog_alt_name}}">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>{{a.blog_alt_name}}</h2>
+                        <p>{{a.blog_title| truncatechars:50}}</p>
+                        <div class="effect-btn">
+                            <a href="/blogs/{{a.slug}}" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+       
+      
+
+    </div>
+</div>
+
+
+
+
+{% comment %} <div class="container">
+    <div class="section-title">
+        <h1>Works</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="column">
+
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/static/images/ed-tech-industry.jpg" alt="ed-tech-industry">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>This is heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat
+                            nulla soluta exceptu</p>
+                        <div class="effect-btn">
+                            <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/static/images/banking-industry.jpg" alt="banking-industry">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>This is heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat
+                            nulla cum soluta exceptu</p>
+                        <div class="effect-btn">
+                            <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/static/images/financial-service-industry.jpg" alt="financial-service-industry">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>This is heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat
+                            nulla cum soluta exceptu</p>
+                        <div class="effect-btn">
+                            <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/static/images/healthcare-industry.jpg" alt="healthcare-industry">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>This is heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat
+                            nulla cum soluta exceptu</p>
+                        <div class="effect-btn">
+                            <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/static/images/insurance-industry.jpg" alt="insurance-industry">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>This is heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat
+                            nulla cum soluta exceptu</p>
+                        <div class="effect-btn">
+                            <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="effect">
+                <div class="effect-img">
+                    <img src="/static/images/others-industry.jpg" alt="others-industry">
+                </div>
+                <div class="effect-text">
+                    <div class="inner">
+                        <h2>This is heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat
+                            nulla cum soluta exceptu</p>
+                        <div class="effect-btn">
+                            <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> {% endcomment %}
+{% endblock insorance_service_body %}

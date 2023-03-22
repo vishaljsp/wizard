@@ -1,0 +1,51 @@
+.slecterallborder{
+    border-radius: 7px;
+}
+
+#down_nevbar{
+    position: relative;
+    left:20rem;
+    top:-2rem;
+    height:3rem;
+}
+/* #fn_nev{
+    display:none;
+} */
+#divseting{
+    height: 200px;
+}
+
+#textcuntent{
+    font-size:10px;
+}
+#divseting001{
+    width:350px;
+    height: 40rem;
+
+}
+#jdivseting001{
+    width:300px;
+    height: 22rem;
+    padding-left:10px;
+}
+#callfm{
+    position: relative;
+    left: 22rem;
+}
+
+#logommg{
+    height:8rem;
+    width:8rem;
+}
+@media screen and (max-width:991px) {
+    /* #fn_nev{
+        display: block;
+    }
+    #down_nevbar{
+        display: none;
+    } */
+    #callfm{
+        position: relative;
+        left:0%;
+    }
+}

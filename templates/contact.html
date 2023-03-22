@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% block mainagebody %}
+
+
+<div id="page">
+  
+    <section id="hero-inner">
+        <div class="hero-inner-wrapper">
+            <div class="hero-inner-container bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Contact Us</h2>
+                            <p>Get to know us better</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ======= Contact Wrapper Section ======= -->
+    <div class="contact-wrapper">
+        <div class="contact-row">
+            <!-- ======= Social Review Section ======= -->
+            <div class="social-review">
+                <h4>We’ve been churning out successful projects since 1997</h4>
+           
+            </div>
+            <!-- End Social Review -->
+
+            <!-- ======= Contact Form Section ======= -->
+            <div class="cont-frm-row">
+                <div class="cont-title">
+                    
+                    <h3>
+                        Take Your <strong>Dream Project</strong> to the
+                        <strong>next level!</strong>
+                    </h3>
+                    <p>Help us know more about the project</p>
+                </div>
+
+                    <form  id="connectform" class="row g-3" method="post">
+                        {% csrf_token %}
+                        <div class="col-md-12">
+                            <!-- <label for="validationDefault01" class="form-label">First name</label> -->
+                            <input type="text" class="form-control p-4" name="fullnamej" id="validationDefault01" required
+                                placeholder="Full Name">
+                            <br>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="Email" class="form-control p-4" name="Email_id" id="validationDefault02" required
+                                placeholder="Email ID">
+                            <br>
+    
+                        </div>            
+                            
+                         
+                        <div class="col-md-12">
+                            <input type="text" class="form-control p-4" name="phonen" id="validationDefault02" required
+                                placeholder="Mobile">
+                            <br>
+    
+                        </div>
+                        
+                        <div class="form-floating mx-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px;width:54rem"></textarea>
+                            <br>
+                          </div>
+                        
+                       
+                        <div class="col-10">
+                            <button class="btn" type="submit" style="background-color:#dd3737;">Submit form</button>
+                        </div>
+                    </form>
+            </div>
+            <!-- End Contact Form -->
+
+            <!-- ======= Our Publications Section ======= -->
+        
+            <!-- End Our Publications -->
+
+            <!-- ======= Our Publications Section ======= -->
+            <div class="our-locations">
+                <h4>Our <strong>Locations</strong></h4>
+                <div class="locations-row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 d-flex">
+                                <div class="info-box">
+                                    <i class="bx bx-map"></i>
+                                    <h5>Kolkata</h5>
+                                    <p><strong>Indus Net Technologies Pvt. Ltd.</strong></p>
+                                    <p>4th Floor, SDF Building, Saltlake Electronic Complex, Kolkata - 700091, West Bengal, India</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 d-flex">
+                                <div class="info-box">
+                                    <i class="bx bx-map"></i>
+                                    <h5>Chennai</h5>
+                                    <p><strong>Indus Net Technologies Pvt. Ltd.</strong></p>
+                                    <p>Workafella High Street, 3rd Floor, 361, New No 431, Anna Salai, Theynampet, Chennai, Tamil Nadu 600018</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 d-flex">
+                                <div class="info-box">
+                                    <i class="bx bx-map"></i>
+                                    <h5>Mumbai</h5>
+                                    <p><strong>Indus Net Technologies Pvt. Ltd.</strong></p>
+                                    <p>91Springboard, Behind Shaman Wheels Showroom, Kalina, Santacruz East, Mumbai, 400098</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 d-flex">
+                                <div class="info-box">
+                                    <i class="bx bx-map"></i>
+                                    <h5>Hyderabad</h5>
+                                    <p><strong>Indus Net Technologies Pvt. Ltd.</strong></p>
+                                    <p>Workafella 6-3-252/2, Sri Ram Nest, Mega City, Irram Manzil Colony, Banjara Hills, Hyderabad, Telangana 500082</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Our Publications -->
+        </div>
+    </div>
+    <!-- End Contact Wrapper -->
+</div>
+
+{% endblock mainagebody %}
+

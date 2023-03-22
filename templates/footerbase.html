@@ -1,0 +1,58 @@
+<!-- {% comment %} {% extends "base.html" %} {% endcomment %} -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "headerlinks.html" %}
+   
+</head>
+
+<body class="home page-template page-template-front-page page-template-front-page-php page page-id-18565">
+    <header id="header" class="fixed-top header-innr">
+        <div class="container d-flex align-items-center">
+            <div class="logo">
+                <a href="/" class="logo-brand"
+                    title="Indus Net Technology - Award Winning Full Stack Digital Service Company">
+                    <figure>
+                        <img src="/static/01bf24e0-b207-4864-9ca0-cd6aba42591a-removebg-preview.png"
+                            alt="Logo" id="logommg">
+                    </figure>
+                </a>
+            </div>
+            <!-- .nav-menu -->
+            <div id="fn_nev">
+                {% include 'nev.html' %}
+
+            </div>
+            <a onclick="fm()" class="lets-connect-btn btn btn-primary btn-innr ml-auto scrollto"
+                title="Let’s Connect">Let’s Connect</a>
+            <a href="tel:+918700242627" class="book-call-btn btn btn-secondary btn-innr-2"
+                title="Book a Call">Book a Call</a>
+
+
+        </div>
+       
+        </div>
+    </header>
+
+
+    {% block body %}
+
+
+    {% endblock body %}
+
+    {% include 'formlink.html' %}
+
+    <!-- End Let's Bring Your Ideas To Life Section -->
+
+    <!-- ======= Footer ======= -->
+  
+    {% include 'footerlinks.html' %}
+
+
+</body>
+
+</html>
